@@ -13,10 +13,16 @@ html {
 }
 
 body {
-	min-width: 1600px;
 	font-family: $font1;
 	font-size: 14px;
 	background-color: $color-light;
+}
+
+.main-container {
+	min-width: 1600px;
+}
+.col-fix {
+	max-width: 220px;
 }
 
 main {
