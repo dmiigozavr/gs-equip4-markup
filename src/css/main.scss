@@ -38,8 +38,27 @@ h4 {
 	font-size: 18px;
 }
 
-.fz12 {
+.fs12 {
 	font-size: 12px;
+}
+.fs16 {
+	font-size: 16px;
+}
+.fs18 {
+	font-size: 18px;
+}
+
+.text-black {
+	color: $color-black;
+}
+.text-color {
+	color: $color2;
+}
+
+.btn-sm {
+	font-size: 12px;
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
 .after-line {
@@ -129,7 +148,6 @@ input.field {
 		font-size: 14px;
 	}
 }
-
 .buttons-group-line {
 	ul {
 		display: flex;
@@ -138,12 +156,6 @@ input.field {
 .buttons-group-line__item {
 	+ .buttons-group-line__item {
 		margin-left: 5px;
-	}
-}
-.buttons-group-line__item {
-	.btn {
-		display: block;
-		font-size: 14px;
 	}
 }
 
@@ -233,9 +245,12 @@ label.single-label {
 	}
 }
 
-.equip-summary {
-	padding-left: 10px;
+.equip-summary__item {
+	+ .equip-summary__item {
+		margin-top: 16px;
+	}
 }
+
 .detail-table {
 	color: $color3;
 	font-family: $font2;
