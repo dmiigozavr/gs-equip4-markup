@@ -17,10 +17,10 @@ const {src, dest, watch, parallel} = require('gulp'),
 function jsPlugs() {
 	return src([
 		//'node_modules/jquery/dist/jquery.min.js',
-		//'node_modules/bootstrap/dist/js/bootstrap.min.js',
-		//'node_modules/bootstrap/dist/js/bootstrap.min.js.map',
-		//'node_modules/popper.js/dist/umd/popper.min.js',
-		//'node_modules/popper.js/dist/umd/popper.min.js.map',
+		// 'node_modules/bootstrap/dist/js/bootstrap.min.js',
+		// 'node_modules/bootstrap/dist/js/bootstrap.min.js.map',
+		'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+		'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map',
 		//'node_modules/slick-carousel/slick/slick.min.js',
 		//'node_modules/slick-carousel/slick/slick.js',
 		//'node_modules/owl.carousel/dist/owl.carousel.min.js',
@@ -227,7 +227,7 @@ exports.bscss = bsCssBuild;
 
 exports.default = parallel(
 	clean,
-	//jsPlugs,
+	jsPlugs,
 	//cssPlugs,
 	//imgsForPlugs,
 	//fontsForPlugs,

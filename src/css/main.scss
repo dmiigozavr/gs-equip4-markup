@@ -20,6 +20,11 @@ body {
 	background-color: $color-light;
 }
 
+.popover {
+	--bs-popover-body-color: #{$color3};
+	--bs-popover-body-padding-y: 0.5rem;
+}
+
 .col-fix {
 	width: 165px;
 }
