@@ -5,6 +5,7 @@ $color1: #ccc;
 $color2: #17a2b8;
 $color3: #6c757d;
 $color4: #eee;
+$color5: #ddd;
 $radius: 5px;
 
 $font1: 'Montserrat-Medium', sans-serif;
@@ -23,10 +24,6 @@ body {
 .popover {
 	--bs-popover-body-color: #{$color3};
 	--bs-popover-body-padding-y: 0.5rem;
-}
-
-.col-fix {
-	width: 165px;
 }
 
 main {
@@ -101,6 +98,8 @@ h4 {
 	}
 }
 .hidden-scroll {
+	overflow-y: auto;
+	overflow-x: hidden;
 	&::-webkit-scrollbar {
 		width: 0;
 	}
@@ -173,7 +172,7 @@ input.field {
 	flex-direction: column;
 	height: 100%;
 	padding-left: 15px;
-	border-left: 1px solid $color1;
+	border-left: 1px solid $color5;
 	$contentHeader: 40px;
 	.content-header {
 		flex-shrink: 0;
@@ -186,11 +185,13 @@ input.field {
 
 .bricks-container {
 	padding-top: 10px;
+	border-left: 1px solid $color5;
+	
 }
 .brick {
 	position: relative;
 	color: $color3;
-	padding: 4px 10px;
+	padding: 6px 10px;
 	border: 1px solid $color1;
 	border-radius: $radius;
 	.brick-title {
@@ -206,7 +207,7 @@ input.field {
 	label {
 		display: block;
 		width: 100%;
-		padding: 0 8px;
+		//padding: 0 8px;
 	}
 	&.disabled {
 		.brick-title {
@@ -227,8 +228,8 @@ input.field {
 }
 
 .options-list {
-	display: flex;
-	align-items: center;
+	//display: flex;
+	//align-items: center;
 	li {
 		padding: 6px 0 5px 0;
 	}
@@ -289,7 +290,7 @@ label.single-label {
 .string-table {
 	width: 100%;
 	color: $color3;
-	font-size: 11px;
+	font-size: 12px;
 	tr {
 		td {
 			vertical-align: bottom;
@@ -310,7 +311,7 @@ label.single-label {
 				padding-left: 8px;
 				span {
 					display: block;
-					max-width: 90px;
+					max-width: 100px;
 					overflow: hidden;
 					white-space: nowrap;
 					text-overflow: ellipsis;
