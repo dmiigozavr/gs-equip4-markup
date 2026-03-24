@@ -1,0 +1,290 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+  background-color: #f6f6f6;
+}
+
+.popover {
+  --bs-popover-body-color: #6c757d;
+  --bs-popover-body-padding-y: 0.5rem;
+}
+
+main {
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.text-black {
+  color: #333;
+}
+
+.text-color {
+  color: #17a2b8;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.after-line::after {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  border-bottom: 1px solid #17a2b8;
+  margin-left: 5px;
+}
+.after-line.v2::after {
+  border-bottom-color: #ccc;
+}
+
+.custom-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #eee;
+}
+.custom-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
+@-moz-document url-prefix() {
+  .custom-scroll {
+    scrollbar-width: thin;
+  }
+}
+.hidden-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.hidden-scroll::-webkit-scrollbar {
+  width: 0;
+}
+
+@-moz-document url-prefix() {
+  .hidden-scroll {
+    scrollbar-width: none;
+  }
+}
+input[type=radio] {
+  cursor: pointer;
+}
+
+input.field {
+  width: 100%;
+  height: 24px;
+  color: #6c757d;
+  font-size: 14px;
+}
+input.field:disabled {
+  color: #ccc;
+}
+
+.for-sidebar {
+  flex-basis: 200px;
+  flex-grow: 0;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.buttons-group + .buttons-group {
+  margin-top: 20px;
+}
+
+.buttons-group__title {
+  display: flex;
+  align-items: baseline;
+  color: #17a2b8;
+  font-size: 12px;
+}
+
+.buttons-group__item + .buttons-group__item {
+  margin-top: 5px;
+}
+.buttons-group__item .btn {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.buttons-group-line ul {
+  display: flex;
+}
+
+.buttons-group-line__item + .buttons-group-line__item {
+  margin-left: 5px;
+}
+
+.for-content {
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 15px;
+  border-left: 1px solid #ddd;
+}
+.content .content-header {
+  flex-shrink: 0;
+  height: 40px;
+}
+.content .content-body {
+  height: calc(100% - 40px);
+}
+
+.bricks-container {
+  padding-top: 10px;
+  border-left: 1px solid #ddd;
+}
+
+.brick {
+  position: relative;
+  color: #6c757d;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.brick .brick-title {
+  position: absolute;
+  top: -9px;
+  left: 3px;
+  color: #17a2b8;
+  font-size: 11px;
+  background-color: #f6f6f6;
+  padding: 0 5px;
+  transition: color 0.2s;
+}
+.brick label {
+  display: block;
+  width: 100%;
+}
+.brick.disabled .brick-title {
+  color: #ccc;
+}
+.brick.disabled .options-list label {
+  cursor: default;
+}
+.brick.disabled .options-list label input {
+  cursor: default;
+}
+.brick.disabled .options-list label span {
+  color: #ccc;
+}
+
+.options-list li {
+  padding: 6px 0 5px 0;
+}
+
+label.single-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 12px;
+}
+label.single-label span {
+  padding-left: 8px;
+  transition: color 0.2s;
+}
+label.single-label:hover span {
+  color: #17a2b8;
+}
+
+.detail-table {
+  color: #6c757d;
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.detail-table tr:nth-child(even) td {
+  background-color: #f6f6f6;
+}
+.detail-table tr:hover td {
+  color: #17a2b8;
+  background-color: #f8fefe;
+}
+.detail-table td {
+  background-color: #fcfcfc;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  transition: color 0.2s, background-color 0.2s;
+  cursor: default;
+}
+.detail-table td:first-child {
+  padding-right: 25px;
+}
+
+.string-table {
+  width: 100%;
+  color: #6c757d;
+  font-size: 12px;
+}
+.string-table tr td {
+  vertical-align: bottom;
+  padding: 6px 0;
+  cursor: default;
+  transition: color 0.2s;
+}
+.string-table tr td:first-child {
+  display: flex;
+  align-items: baseline;
+}
+.string-table tr td:first-child span {
+  flex-grow: 1;
+  display: block;
+  border-bottom: 1px dashed #6c757d;
+  margin-left: 5px;
+}
+.string-table tr td:last-child {
+  padding-left: 8px;
+}
+.string-table tr td:last-child span {
+  display: block;
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.string-table tr:hover td {
+  color: #333;
+}
+/*# sourceMappingURL=main.css.map */

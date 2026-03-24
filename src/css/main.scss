@@ -252,12 +252,6 @@ label.single-label {
 	}
 }
 
-.equip-summary__item {
-	+ .equip-summary__item {
-		margin-top: 16px;
-	}
-}
-
 .detail-table {
 	color: $color3;
 	font-family: $font2;
