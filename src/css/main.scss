@@ -21,11 +21,6 @@ body {
 	background-color: $color-light;
 }
 
-.popover {
-	--bs-popover-body-color: #{$color3};
-	--bs-popover-body-padding-y: 0.5rem;
-}
-
 main {
 	padding: 0 20px;
 }
@@ -116,7 +111,7 @@ input[type="radio"] {
 input.field {
 	width: 100%;
 	height: 24px;
-	color: $color3;
+	color: var(--bs-gray-700);
 	font-size: 14px;
 	&:disabled {
 		color: $color1;
@@ -190,7 +185,7 @@ input.field {
 }
 .brick {
 	position: relative;
-	color: $color3;
+	color: var(--bs-gray-700);
 	padding: 6px 10px;
 	border: 1px solid $color1;
 	border-radius: $radius;
@@ -228,8 +223,6 @@ input.field {
 }
 
 .options-list {
-	//display: flex;
-	//align-items: center;
 	li {
 		padding: 6px 0 5px 0;
 	}
@@ -239,7 +232,7 @@ label.single-label {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-	color: $color3;
+	color: var(--bs-gray-700);
 	font-size: 12px;
 	span {
 		padding-left: 8px;
@@ -253,7 +246,7 @@ label.single-label {
 }
 
 .detail-table {
-	color: $color3;
+	color: var(--bs-gray-700);
 	font-family: $font2;
 	font-size: 12px;
 	font-weight: 500;
@@ -283,7 +276,7 @@ label.single-label {
 }
 .string-table {
 	width: 100%;
-	color: $color3;
+	color: var(--bs-gray-700);
 	font-size: 12px;
 	tr {
 		td {
@@ -297,7 +290,7 @@ label.single-label {
 				span {
 					flex-grow: 1;
 					display: block;
-					border-bottom: 1px dashed $color3;
+					border-bottom: 1px dashed var(--bs-gray-700);
 					margin-left: 5px;
 				}
 			}

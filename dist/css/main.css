@@ -8,11 +8,6 @@ body {
   background-color: #f6f6f6;
 }
 
-.popover {
-  --bs-popover-body-color: #6c757d;
-  --bs-popover-body-padding-y: 0.5rem;
-}
-
 main {
   padding: 0 20px;
 }
@@ -106,7 +101,7 @@ input[type=radio] {
 input.field {
   width: 100%;
   height: 24px;
-  color: #6c757d;
+  color: var(--bs-gray-700);
   font-size: 14px;
 }
 input.field:disabled {
@@ -178,7 +173,7 @@ input.field:disabled {
 
 .brick {
   position: relative;
-  color: #6c757d;
+  color: var(--bs-gray-700);
   padding: 6px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -218,7 +213,7 @@ label.single-label {
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: #6c757d;
+  color: var(--bs-gray-700);
   font-size: 12px;
 }
 label.single-label span {
@@ -230,7 +225,7 @@ label.single-label:hover span {
 }
 
 .detail-table {
-  color: #6c757d;
+  color: var(--bs-gray-700);
   font-family: "Source Code Pro", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -255,7 +250,7 @@ label.single-label:hover span {
 
 .string-table {
   width: 100%;
-  color: #6c757d;
+  color: var(--bs-gray-700);
   font-size: 12px;
 }
 .string-table tr td {
@@ -271,7 +266,7 @@ label.single-label:hover span {
 .string-table tr td:first-child span {
   flex-grow: 1;
   display: block;
-  border-bottom: 1px dashed #6c757d;
+  border-bottom: 1px dashed var(--bs-gray-700);
   margin-left: 5px;
 }
 .string-table tr td:last-child {
