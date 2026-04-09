@@ -5,6 +5,7 @@ html {
 body {
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 14px;
+  line-height: 1;
   background-color: #f6f6f6;
 }
 
@@ -34,6 +35,10 @@ h4 {
 
 .fs18 {
   font-size: 18px;
+}
+
+.lh125 {
+  line-height: 1.25;
 }
 
 .text-black {
@@ -192,6 +197,12 @@ input.field:disabled {
   display: block;
   width: 100%;
 }
+.brick label.disabled {
+  cursor: default;
+}
+.brick label.disabled span {
+  color: #ccc !important;
+}
 .brick.disabled .brick-title {
   color: #ccc;
 }
@@ -226,8 +237,7 @@ label.single-label:hover span {
 
 .detail-table {
   color: var(--bs-gray-700);
-  font-family: "Source Code Pro", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
 }
 .detail-table tr:nth-child(even) td {

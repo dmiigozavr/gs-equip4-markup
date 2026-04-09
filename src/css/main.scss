@@ -18,6 +18,7 @@ html {
 body {
 	font-family: $font1;
 	font-size: 14px;
+	line-height: 1;
 	background-color: $color-light;
 }
 
@@ -43,6 +44,10 @@ h4 {
 }
 .fs18 {
 	font-size: 18px;
+}
+
+.lh125 {
+	line-height: 1.25;
 }
 
 .text-black {
@@ -202,7 +207,12 @@ input.field {
 	label {
 		display: block;
 		width: 100%;
-		//padding: 0 8px;
+		&.disabled {
+			cursor: default;
+			span {
+				color: $color1 !important;
+			}
+		}
 	}
 	&.disabled {
 		.brick-title {
@@ -247,8 +257,7 @@ label.single-label {
 
 .detail-table {
 	color: var(--bs-gray-700);
-	font-family: $font2;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: 500;
 	tr {
 		&:nth-child(even) {
