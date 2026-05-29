@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  min-width: 1600px;
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 14px;
   line-height: 1;
@@ -171,15 +172,41 @@ input.field:disabled {
   height: calc(100% - 40px);
 }
 
+.bricks-wrap {
+  position: relative;
+  padding-bottom: 60px;
+  border-left: 1px solid #ddd;
+}
+
 .bricks-container {
   padding-top: 10px;
-  border-left: 1px solid #ddd;
+}
+
+.reset-btn-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: calc(1rem + 1px);
+}
+
+.options-list {
+  padding: 6px 0;
+}
+
+.options-list__divider {
+  padding: 0 5px 0 20px;
+  margin: 4px 0;
+}
+.options-list__divider span {
+  display: block;
+  border-bottom: 1px dotted #ccc;
 }
 
 .brick {
   position: relative;
   color: var(--bs-gray-700);
-  padding: 6px 10px;
+  padding: 0 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -196,6 +223,7 @@ input.field:disabled {
 .brick label {
   display: block;
   width: 100%;
+  padding: 6px 0;
 }
 .brick label.disabled {
   cursor: default;
@@ -216,16 +244,13 @@ input.field:disabled {
   color: #ccc;
 }
 
-.options-list li {
-  padding: 6px 0 5px 0;
-}
-
 label.single-label {
   display: flex;
   align-items: center;
   cursor: pointer;
   color: var(--bs-gray-700);
   font-size: 12px;
+  padding: 6px 0 5px 0;
 }
 label.single-label span {
   padding-left: 8px;
